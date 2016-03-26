@@ -36,7 +36,7 @@ namespace EllipseRotateAnimation
 
                 for(var i=0; i < numOfEllipses ; i++)
                 {
-                    rotate.RotateAt((float)(t*180/Duration), center);
+                    rotate.RotateAt((float)(t*180/500), center);
                     //add it to g.Transform
                     graphics.Transform = rotate;
 
@@ -55,7 +55,7 @@ namespace EllipseRotateAnimation
         public int Width { get; } = 1920;
         public int Height { get; } = 1080;
         public int Fps { get; } = 30;
-        public double Duration { get; } = 300;
+        public double Duration { get; } = 10;
     }
 
     public static class GraphicsExtension
